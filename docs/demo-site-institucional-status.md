@@ -1,6 +1,6 @@
 # Status: demo-site-institucional
 
-## Fase atual: Entregáveis de código concluídos — aguardando montagem no LocalWP
+## Fase atual: Montado, exportado e no GitHub — aguardando conexão com a Vercel
 ## Último agente: Claude principal (sessão de 2026-11-06)
 ## Branch: main
 
@@ -118,3 +118,73 @@ Nenhum blocker de código. O que falta depende de ação manual:
    e aplicar layout Canvas em todas
 2. **Assistente:** auditar contraste e layout das 4 páginas no navegador,
    corrigir o que aparecer, exportar e publicar na Vercel
+
+---
+
+## Montagem e export — 2026-11-06 (mesma sessão)
+
+Feito com automacao de navegador. O dev optou por manter as imagens
+placeholder: a peça é exemplo, não site de cliente.
+
+### Montado no LocalWP
+
+| Etapa | Como |
+|---|---|
+| Child theme | Copiado direto para wp-content/themes e ativado. Sem tela branca: PHP válido |
+| 4 paginas | Criadas pela REST API com os slugs exatos (inicio, sobre, servicos, contato) |
+| Home e noindex | Definidos pela REST API de settings |
+| Nome do site | "Clinica Movimento", que aparece no title e no JSON-LD |
+| 4 templates | Importados e inseridos, todos em layout Canvas |
+
+### Três defeitos encontrados
+
+1. **Número da etapa da jornada ilegível** (1,38:1): é um `<p>` dentro de
+   text-editor, então o override de cor de texto apagava o branco. Mesmo
+   defeito do selo de garantia da demo 1.
+2. **Sétima armadilha do Elementor**: `.e-con` declara
+   `flex-direction: column`. Sobrescrever `display` e `gap` não basta —
+   os botões do hero ficavam empilhados.
+3. **Import duplicava o template**: chamar `library/open` e
+   `importTemplate` na mesma execução insere duas vezes. O padrão que
+   funciona é carregar a coleção numa execução e inserir noutra.
+
+### Export estatico
+
+O Simply Static vinha com um unico crawler ativo, **Includes Directory**.
+Resultado: 1644 arquivos do `wp-includes` e **nenhuma página** — o
+primeiro export saiu com 1 HTML em vez de 4. Corrigido selecionando
+Homepage URL, Post Type URLs, Elementor Assets, Plugin Assets e Theme
+Assets.
+
+A página de exemplo e o post "hello-world" do WordPress foram para a
+lixeira, porque apareciam no export.
+
+`prune-static.mjs` também ganhou resolução de link de página: o HTML
+referencia `/sobre/` e o arquivo e `sobre/index.html`.
+
+| | |
+|---|---|
+| Export bruto | 2934 arquivos, 131,6MB |
+| Depois da poda | 22 arquivos, 0,5MB |
+| Redução | 99,6% |
+
+### Validado no estatico, antes de publicar
+
+- As 4 páginas respondem e a navegação entre elas funciona
+- Menu destaca a página atual em cada uma
+- Cabeçalho, rodapé e WhatsApp presentes nas 4
+- **Auditoria de contraste no renderizado: 333 elementos, zero falha**
+
+### Pendências
+
+- Imagens continuam placeholder, por decisão do dev
+- Fontes Inter ausentes: o site usa a fonte do sistema
+- Falta conectar à Vercel: importar o repo com *Root Directory* =
+  `site-dist`, preset *Other*, sem build command
+- PageSpeed ainda não medido
+
+### Próximo passo
+
+1. **Dev:** conectar o repositorio na Vercel
+2. **Assistente:** medir o PageSpeed das 4 páginas e acrescentar o case ao
+   portfólio

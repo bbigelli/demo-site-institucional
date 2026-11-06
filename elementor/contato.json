@@ -1,0 +1,584 @@
+{
+  "content": [
+    {
+      "id": "58b0b54",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--pagehero"
+      },
+      "elements": [
+        {
+          "id": "7539199",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "cad2468",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Contato",
+                "header_size": "span",
+                "_css_classes": "fm-badge"
+              }
+            },
+            {
+              "id": "ae49e23",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Agende sua avaliação",
+                "header_size": "h1",
+                "_css_classes": "fm-h1"
+              }
+            },
+            {
+              "id": "91c17de",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>O agendamento é feito por telefone ou WhatsApp, com a recepção. Respondemos no mesmo dia útil.</p>",
+                "_css_classes": "fm-lead"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "7867351",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--canais"
+      },
+      "elements": [
+        {
+          "id": "94ef996",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "b177fdb",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-grid fm-grid--3"
+              },
+              "elements": [
+                {
+                  "id": "eb544d3",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-channel fm-icon-whatsapp"
+                  },
+                  "elements": [
+                    {
+                      "id": "5d75de8",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "WhatsApp",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "40ed7a3",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-channel__value\">(11) 99999-9999</p>",
+                        "_css_classes": "fm-channel__value-wrap"
+                      }
+                    },
+                    {
+                      "id": "246515e",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-channel__hint\">Resposta em horário comercial</p>",
+                        "_css_classes": "fm-channel__hint-wrap"
+                      }
+                    },
+                    {
+                      "id": "07dcb19",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Abrir conversa",
+                        "link": {
+                          "url": "https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20consultas%20na%20Cl%C3%ADnica%20Movimento.",
+                          "is_external": "on",
+                          "nofollow": "",
+                          "custom_attributes": ""
+                        },
+                        "_css_classes": "fm-btn fm-btn--outline fm-btn--sm"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "5caa57a",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-channel fm-icon-phone"
+                  },
+                  "elements": [
+                    {
+                      "id": "cecbe8e",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Telefone",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "b243849",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-channel__value\">(11) 3000-0000</p>",
+                        "_css_classes": "fm-channel__value-wrap"
+                      }
+                    },
+                    {
+                      "id": "95bb204",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-channel__hint\">Segunda a sexta, 7h às 20h</p>",
+                        "_css_classes": "fm-channel__hint-wrap"
+                      }
+                    },
+                    {
+                      "id": "7932bbf",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Ligar agora",
+                        "link": {
+                          "url": "tel:+551130000000",
+                          "is_external": "",
+                          "nofollow": "",
+                          "custom_attributes": ""
+                        },
+                        "_css_classes": "fm-btn fm-btn--outline fm-btn--sm"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "ce00620",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-channel fm-icon-mail"
+                  },
+                  "elements": [
+                    {
+                      "id": "4021f35",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "E-mail",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "23998f0",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-channel__value\">contato@clinicamovimento.com.br</p>",
+                        "_css_classes": "fm-channel__value-wrap"
+                      }
+                    },
+                    {
+                      "id": "07112ab",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-channel__hint\">Para relatórios e documentos</p>",
+                        "_css_classes": "fm-channel__hint-wrap"
+                      }
+                    },
+                    {
+                      "id": "ea88c65",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Enviar e-mail",
+                        "link": {
+                          "url": "mailto:contato@clinicamovimento.com.br",
+                          "is_external": "",
+                          "nofollow": "",
+                          "custom_attributes": ""
+                        },
+                        "_css_classes": "fm-btn fm-btn--outline fm-btn--sm"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "2202814",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--horarios"
+      },
+      "elements": [
+        {
+          "id": "3e8ae59",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "5b1349e",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-split"
+              },
+              "elements": [
+                {
+                  "id": "0645a3d",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-split__copy"
+                  },
+                  "elements": [
+                    {
+                      "id": "5bded0c",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Funcionamento",
+                        "header_size": "span",
+                        "_css_classes": "fm-badge"
+                      }
+                    },
+                    {
+                      "id": "3f566c7",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Horário de atendimento",
+                        "header_size": "h2",
+                        "_css_classes": "fm-h2"
+                      }
+                    },
+                    {
+                      "id": "22ce082",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<ul class=\"fm-hours\"><li><span>Segunda a sexta</span><strong>7h às 20h</strong></li><li><span>Sábado</span><strong>8h às 13h</strong></li><li><span>Domingo e feriados</span><strong>Fechado</strong></li></ul>",
+                        "_css_classes": "fm-hours-wrap"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "779bae3",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-split__aside"
+                  },
+                  "elements": [
+                    {
+                      "id": "e9bd3f7",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Primeira consulta",
+                        "header_size": "span",
+                        "_css_classes": "fm-badge"
+                      }
+                    },
+                    {
+                      "id": "cd34db2",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "O que levar na avaliação",
+                        "header_size": "h2",
+                        "_css_classes": "fm-h2"
+                      }
+                    },
+                    {
+                      "id": "b0ac76d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<ul class=\"fm-checks\"><li>Documento com foto</li><li>Exames de imagem recentes, se houver — radiografia, ressonância, ultrassom</li><li>Relatório ou pedido médico, quando existir</li><li>Lista dos medicamentos em uso</li><li>Roupa confortável, que permita movimento</li></ul>",
+                        "_css_classes": "fm-checks"
+                      }
+                    },
+                    {
+                      "id": "9424128",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-note\">Nada disso é obrigatório para ser atendido. Se você não tem exames ou encaminhamento, a avaliação acontece do mesmo jeito.</p>",
+                        "_css_classes": "fm-note-wrap"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "e75aaad",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--endereco"
+      },
+      "elements": [
+        {
+          "id": "03e30f3",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "057a1cf",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Endereço",
+                "header_size": "span",
+                "_css_classes": "fm-badge"
+              }
+            },
+            {
+              "id": "e8f1b89",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Como chegar",
+                "header_size": "h2",
+                "_css_classes": "fm-h2"
+              }
+            },
+            {
+              "id": "cc69544",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p class=\"fm-address\">Rua das Acácias, 120 — conjunto 42<br>Pinheiros, São Paulo — SP<br>CEP 05000-000</p>",
+                "_css_classes": "fm-address-wrap"
+              }
+            },
+            {
+              "id": "93588ba",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-map-wrap"
+              },
+              "elements": [
+                {
+                  "id": "afe0eff",
+                  "elType": "widget",
+                  "widgetType": "google_maps",
+                  "settings": {
+                    "address": "Pinheiros, São Paulo, SP",
+                    "zoom": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "height": {
+                      "unit": "px",
+                      "size": 420,
+                      "sizes": []
+                    },
+                    "_css_classes": "fm-map"
+                  }
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "206b738",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-grid fm-grid--2"
+              },
+              "elements": [
+                {
+                  "id": "3dbf5eb",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "76d0275",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Metrô e trem",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "5a47c30",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Estação Faria Lima (linha 4-Amarela), a dois quarteirões. Saída pela Rua dos Pinheiros.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "e82631b",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "2136fa6",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Ônibus",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "04ae961",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Linhas que servem a Avenida Rebouças e a Rua dos Pinheiros param a menos de 300 metros.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "928d04c",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "cb9dcd6",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Carro",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "af15691",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Estacionamento conveniado no mesmo quarteirão, com desconto para pacientes. Peça o selo na recepção.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "3cf3d7d",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "7604a07",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Acessibilidade",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "597c3c2",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Acesso sem degraus da calçada ao elevador, e do elevador à sala. Banheiro adaptado no andar.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Clinica Movimento - Contato",
+  "type": "page"
+}

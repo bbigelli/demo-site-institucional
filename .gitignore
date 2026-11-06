@@ -1,0 +1,19 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Instalacao WordPress nunca vai para o repositorio
+wp-config.php
+*.sql
+*.sql.gz
+
+# Saida bruta do Simply Static: dezenas de MB de wp-includes que o site nao
+# usa. A versao enxuta fica em site-dist/, gerada por build/prune-static.mjs
+site/
+
+# ZIP do tema: artefato derivado de build/pack-theme.ps1
+dist/
+
+# Prints brutos; manter só os curados em assets/
+assets/raw/

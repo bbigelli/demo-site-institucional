@@ -1,0 +1,507 @@
+{
+  "content": [
+    {
+      "id": "79fe42d",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--pagehero"
+      },
+      "elements": [
+        {
+          "id": "9686a72",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "ec1fd41",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Especialidades",
+                "header_size": "span",
+                "_css_classes": "fm-badge"
+              }
+            },
+            {
+              "id": "cf976fc",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Serviços",
+                "header_size": "h1",
+                "_css_classes": "fm-h1"
+              }
+            },
+            {
+              "id": "b30f0b7",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Seis áreas de atuação. Em todas elas o percurso é o mesmo: avaliação individual, plano por escrito, sessões de 50 minutos e reavaliação periódica.</p>",
+                "_css_classes": "fm-lead"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "5f0cec4",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--servicos-lista"
+      },
+      "elements": [
+        {
+          "id": "7b95509",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "981db4e",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-services"
+              },
+              "elements": [
+                {
+                  "id": "7df7e53",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-service-full fm-icon-bone"
+                  },
+                  "elements": [
+                    {
+                      "id": "f019767",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Fisioterapia ortopédica",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "d391122",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__lead\">Tratamento de lesões e disfunções de músculos, ossos e articulações.</p>",
+                        "_css_classes": "fm-service__lead-wrap"
+                      }
+                    },
+                    {
+                      "id": "b708add",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Indicada para tendinopatias, lesões ligamentares, dores articulares e quadros de coluna. O tratamento combina terapia manual e exercício terapêutico progressivo, com recursos eletrotermofototerapêuticos quando há indicação clínica.</p>"
+                      }
+                    },
+                    {
+                      "id": "9a80498",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__label\">Indicações mais comuns</p><ul class=\"fm-checks\"><li>Dor lombar e cervical persistente</li><li>Tendinopatias de ombro, cotovelo e joelho</li><li>Entorses e lesões ligamentares</li><li>Disfunções da articulação temporomandibular</li></ul>",
+                        "_css_classes": "fm-service__ind"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "ef4def9",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-service-full fm-icon-activity"
+                  },
+                  "elements": [
+                    {
+                      "id": "616f80e",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Fisioterapia esportiva",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "44e71c9",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__lead\">Reabilitação e prevenção para quem pratica atividade física com regularidade.</p>",
+                        "_css_classes": "fm-service__lead-wrap"
+                      }
+                    },
+                    {
+                      "id": "285eb84",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Voltada a atletas amadores, corredores e praticantes de musculação. Trabalha o retorno gradual ao esporte depois de uma lesão e a identificação dos fatores que levaram a ela, para reduzir a chance de recidiva.</p>"
+                      }
+                    },
+                    {
+                      "id": "0bd653f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__label\">Indicações mais comuns</p><ul class=\"fm-checks\"><li>Retorno ao esporte após lesão ou cirurgia</li><li>Dores recorrentes ligadas à corrida</li><li>Avaliação funcional pré-temporada</li><li>Correção de padrão de movimento</li></ul>",
+                        "_css_classes": "fm-service__ind"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "60a3fa0",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-service-full fm-icon-spine"
+                  },
+                  "elements": [
+                    {
+                      "id": "d2c58b4",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "RPG — Reeducação Postural Global",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "b63d26f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__lead\">Abordagem global das cadeias musculares, com foco em postura e dor crônica.</p>",
+                        "_css_classes": "fm-service__lead-wrap"
+                      }
+                    },
+                    {
+                      "id": "99b4c2a",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Método que trata o corpo como um conjunto de cadeias musculares interligadas, em vez de tratar o ponto onde dói. As sessões usam posturas de alongamento ativo sustentado, conduzidas individualmente.</p>"
+                      }
+                    },
+                    {
+                      "id": "7d2c5e5",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__label\">Indicações mais comuns</p><ul class=\"fm-checks\"><li>Dor crônica de coluna sem causa estrutural definida</li><li>Desvios posturais</li><li>Encurtamentos musculares importantes</li><li>Desconforto associado a longas horas sentado</li></ul>",
+                        "_css_classes": "fm-service__ind"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "d1fa046",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-service-full fm-icon-heart"
+                  },
+                  "elements": [
+                    {
+                      "id": "441b95b",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Pilates clínico",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "2793316",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__lead\">Exercício terapêutico em aparelhos, prescrito e supervisionado individualmente.</p>",
+                        "_css_classes": "fm-service__lead-wrap"
+                      }
+                    },
+                    {
+                      "id": "0b0acd1",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Diferente do Pilates de condicionamento: aqui a sequência é prescrita a partir da sua avaliação fisioterapêutica e ajustada sessão a sessão. Usado com frequência na fase de fortalecimento após a dor ceder.</p>"
+                      }
+                    },
+                    {
+                      "id": "ee8268b",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__label\">Indicações mais comuns</p><ul class=\"fm-checks\"><li>Fortalecimento após quadro de dor lombar</li><li>Manutenção depois da alta de outro tratamento</li><li>Condicionamento com restrição articular</li><li>Consciência corporal e controle motor</li></ul>",
+                        "_css_classes": "fm-service__ind"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "43500ed",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-service-full fm-icon-brain"
+                  },
+                  "elements": [
+                    {
+                      "id": "b571a01",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Fisioterapia neurofuncional",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "98e93bc",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__lead\">Reabilitação de adultos com comprometimento neurológico.</p>",
+                        "_css_classes": "fm-service__lead-wrap"
+                      }
+                    },
+                    {
+                      "id": "7c60d77",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Atendimento voltado à independência funcional em casos de sequela neurológica. O trabalho é lento por natureza e os objetivos são definidos junto com paciente e família, em termos de atividades concretas do dia a dia.</p>"
+                      }
+                    },
+                    {
+                      "id": "5fd8732",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__label\">Indicações mais comuns</p><ul class=\"fm-checks\"><li>Sequela de acidente vascular cerebral</li><li>Doença de Parkinson</li><li>Esclerose múltipla</li><li>Neuropatias periféricas</li></ul>",
+                        "_css_classes": "fm-service__ind"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "b4a6193",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-service-full fm-icon-recovery"
+                  },
+                  "elements": [
+                    {
+                      "id": "26c7aa8",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Reabilitação pós-cirúrgica",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "0a3f463",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__lead\">Acompanhamento do pós-operatório, em articulação com a equipe médica.</p>",
+                        "_css_classes": "fm-service__lead-wrap"
+                      }
+                    },
+                    {
+                      "id": "edb6e1d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Conduzida segundo o protocolo do cirurgião e ajustada à sua evolução. Mantemos contato com o médico responsável ao longo do processo e emitimos relatórios de evolução para as consultas de retorno.</p>"
+                      }
+                    },
+                    {
+                      "id": "d12e7d8",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-service__label\">Indicações mais comuns</p><ul class=\"fm-checks\"><li>Pós-operatório de ligamento cruzado anterior</li><li>Pós-operatório de manguito rotador</li><li>Artroplastia de joelho e de quadril</li><li>Cirurgias de coluna</li></ul>",
+                        "_css_classes": "fm-service__ind"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d062f6a",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--aviso"
+      },
+      "elements": [
+        {
+          "id": "eceb5af",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "0973bf5",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-notice"
+              },
+              "elements": [
+                {
+                  "id": "428487f",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Sobre indicação e resultados",
+                    "header_size": "h3",
+                    "_css_classes": "fm-h3"
+                  }
+                },
+                {
+                  "id": "25fc23a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>A indicação de qualquer um destes serviços depende de avaliação fisioterapêutica individual. Resultados variam conforme o quadro clínico, o tempo de evolução e a adesão ao tratamento. Esta página tem caráter informativo e não substitui consulta com profissional de saúde.</p>"
+                  }
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "08a8387",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--cta"
+      },
+      "elements": [
+        {
+          "id": "25309cc",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "b3da925",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Não sabe qual serviço se aplica ao seu caso?",
+                "header_size": "h2",
+                "_css_classes": "fm-h2"
+              }
+            },
+            {
+              "id": "97522e0",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>É exatamente para isso que existe a avaliação. Em uma hora conseguimos identificar o que está acontecendo e indicar o caminho — mesmo que o caminho não seja a fisioterapia.</p>",
+                "_css_classes": "fm-lead"
+              }
+            },
+            {
+              "id": "41b9011",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-actions"
+              },
+              "elements": [
+                {
+                  "id": "7ac9c9b",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Agendar avaliação",
+                    "link": {
+                      "url": "/contato/",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_css_classes": "fm-btn fm-btn--primary"
+                  }
+                },
+                {
+                  "id": "5e41656",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Falar no WhatsApp",
+                    "link": {
+                      "url": "https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20consultas%20na%20Cl%C3%ADnica%20Movimento.",
+                      "is_external": "on",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_css_classes": "fm-btn fm-btn--ghost"
+                  }
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Clinica Movimento - Servicos",
+  "type": "page"
+}

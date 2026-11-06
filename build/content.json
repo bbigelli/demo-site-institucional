@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "title": "Clínica Movimento",
+    "tagline": "Fisioterapia e reabilitação",
+    "lang": "pt-BR"
+  },
+  "site": {
+    "nome": "Clínica Movimento",
+    "nomeCurto": "Movimento",
+    "descricao": "Clínica de fisioterapia e reabilitação em São Paulo. Avaliação individual, tratamento conduzido por fisioterapeuta e acompanhamento até a alta.",
+    "telefone": "(11) 3000-0000",
+    "telefoneLink": "+551130000000",
+    "whatsapp": "5511999999999",
+    "whatsappMensagem": "Olá! Gostaria de informações sobre as consultas na Clínica Movimento.",
+    "email": "contato@clinicamovimento.com.br",
+    "endereco": "Rua das Acácias, 120 — conjunto 42\nPinheiros, São Paulo — SP\nCEP 05000-000",
+    "enderecoLinha": "Rua das Acácias, 120 — Pinheiros, São Paulo",
+    "mapaConsulta": "Pinheiros, São Paulo, SP",
+    "horarios": [
+      { "dias": "Segunda a sexta", "horario": "7h às 20h" },
+      { "dias": "Sábado", "horario": "8h às 13h" },
+      { "dias": "Domingo e feriados", "horario": "Fechado" }
+    ],
+    "responsavelTecnico": "Responsável técnica: Dra. Helena Vasconcelos — CREFITO-3 000000-F"
+  },
+  "nav": [
+    { "rotulo": "Início", "slug": "" },
+    { "rotulo": "Sobre", "slug": "sobre" },
+    { "rotulo": "Serviços", "slug": "servicos" },
+    { "rotulo": "Contato", "slug": "contato" }
+  ],
+  "ctaGlobal": {
+    "primario": "Agendar avaliação",
+    "secundario": "Falar no WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "badge": "Pinheiros, São Paulo",
+      "h1": "Fisioterapia que começa pela avaliação, não pelo aparelho",
+      "sub": "Cada tratamento na Clínica Movimento parte de uma avaliação individual e é conduzido do início ao fim pelo mesmo fisioterapeuta. Sem sessão em série, sem rodízio de profissional.",
+      "cta": "Agendar avaliação",
+      "ctaSecundario": "Ver serviços",
+      "imageAlt": "Sala de atendimento da Clínica Movimento, com maca e equipamentos de reabilitação"
+    },
+    "pilares": {
+      "badge": "Como atendemos",
+      "h2": "Três compromissos que orientam o atendimento",
+      "itens": [
+        {
+          "icon": "user",
+          "titulo": "Um fisioterapeuta do início ao fim",
+          "texto": "Quem avalia é quem acompanha. Você não recomeça a explicar sua história a cada sessão, e quem conduz o tratamento percebe a evolução de perto."
+        },
+        {
+          "icon": "clock",
+          "titulo": "Sessões de 50 minutos, individuais",
+          "texto": "O horário é só seu. Não atendemos mais de uma pessoa no mesmo intervalo, o que permite ajustar a conduta durante a própria sessão."
+        },
+        {
+          "icon": "clipboard",
+          "titulo": "Plano escrito e revisado",
+          "texto": "Ao fim da avaliação você recebe o plano terapêutico por escrito, com objetivos e número estimado de sessões. Ele é revisado a cada reavaliação."
+        }
+      ]
+    },
+    "servicosDestaque": {
+      "badge": "Especialidades",
+      "h2": "O que tratamos",
+      "intro": "Seis áreas de atuação, todas conduzidas por fisioterapeutas com formação específica.",
+      "cta": "Ver todos os serviços"
+    },
+    "jornada": {
+      "badge": "Como funciona",
+      "h2": "Do primeiro contato à alta",
+      "etapas": [
+        {
+          "numero": "1",
+          "titulo": "Contato e agendamento",
+          "texto": "Você entra em contato por telefone ou WhatsApp e agendamos a avaliação no horário que couber na sua rotina."
+        },
+        {
+          "numero": "2",
+          "titulo": "Avaliação individual",
+          "texto": "Uma hora dedicada a entender a queixa, o histórico e os exames. É quando definimos se a fisioterapia é indicada e qual abordagem faz sentido."
+        },
+        {
+          "numero": "3",
+          "titulo": "Plano terapêutico",
+          "texto": "Você recebe por escrito os objetivos, a frequência sugerida e a estimativa de sessões. Tudo conversado antes de começar."
+        },
+        {
+          "numero": "4",
+          "titulo": "Tratamento e reavaliação",
+          "texto": "As sessões seguem o plano, com reavaliação periódica. Se o quadro mudar, a conduta muda junto."
+        },
+        {
+          "numero": "5",
+          "titulo": "Alta e orientação",
+          "texto": "A alta vem com orientações de manutenção para você seguir em casa, porque o ganho só se sustenta com continuidade."
+        }
+      ]
+    },
+    "convenios": {
+      "badge": "Atendimento",
+      "h2": "Particular e reembolso",
+      "texto": "Atendemos em regime particular e emitimos recibo e relatório para solicitação de reembolso ao seu convênio. A documentação segue o padrão exigido pelas operadoras, e orientamos sobre como enviar.",
+      "itens": [
+        "Recibo e relatório emitidos no mesmo dia",
+        "Nota fiscal de serviço quando solicitada",
+        "Orientação sobre o processo de reembolso do seu plano"
+      ]
+    },
+    "localizacao": {
+      "badge": "Onde estamos",
+      "h2": "No coração de Pinheiros",
+      "texto": "A dois quarteirões da estação Faria Lima e com estacionamento conveniado no mesmo quarteirão. O prédio tem elevador e acesso sem degraus, da calçada à sala de atendimento.",
+      "cta": "Como chegar"
+    },
+    "chamadaFinal": {
+      "h2": "A avaliação é o primeiro passo",
+      "texto": "Em uma hora conseguimos entender a sua queixa e dizer, com honestidade, se a fisioterapia é o caminho e quanto tempo ela tende a levar.",
+      "cta": "Agendar avaliação",
+      "ctaSecundario": "Tirar uma dúvida no WhatsApp"
+    }
+  },
+  "sobre": {
+    "hero": {
+      "badge": "Sobre a clínica",
+      "h1": "Uma clínica construída em torno do tempo de atendimento",
+      "sub": "A Movimento nasceu em 2017 de uma inconformidade simples: fisioterapia feita com pressa não funciona, e quase toda a estrutura do setor empurra o profissional para a pressa."
+    },
+    "historia": {
+      "h2": "Por que existimos",
+      "paragrafos": [
+        "Helena Vasconcelos passou nove anos atendendo em clínicas que trabalhavam com três pacientes simultâneos por fisioterapeuta. O modelo é economicamente eficiente e clinicamente pobre: o profissional circula entre macas, a conduta vira protocolo e o paciente percebe que poderia estar em qualquer lugar.",
+        "Em 2017 ela abriu a Movimento com uma regra que nunca foi flexibilizada: um paciente por fisioterapeuta, por sessão. Isso define o tamanho da clínica, o preço da sessão e o tipo de caso que conseguimos acompanhar bem.",
+        "Hoje somos três fisioterapeutas e uma recepção. Não pretendemos crescer muito além disso, porque a escala que funcionaria financeiramente é exatamente a que abandonamos."
+      ]
+    },
+    "equipe": {
+      "badge": "Quem atende",
+      "h2": "A equipe",
+      "intro": "Três fisioterapeutas, cada uma com área de concentração definida. Você é encaminhado para quem tem formação no seu tipo de caso.",
+      "membros": [
+        {
+          "nome": "Dra. Helena Vasconcelos",
+          "cargo": "Fisioterapeuta · CREFITO-3 000000-F",
+          "formacao": "Especialista em Fisioterapia Ortopédica e Traumatológica",
+          "bio": "Fundadora da clínica e responsável técnica. Atua com reabilitação pós-cirúrgica de joelho e ombro, e com casos de dor crônica em coluna.",
+          "imageAlt": "Retrato da fisioterapeuta Helena Vasconcelos"
+        },
+        {
+          "nome": "Dr. Rodrigo Tanaka",
+          "cargo": "Fisioterapeuta · CREFITO-3 000000-F",
+          "formacao": "Especialista em Fisioterapia Esportiva",
+          "bio": "Acompanha atletas amadores e corredores, com foco em prevenção de lesão e retorno seguro à prática após afastamento.",
+          "imageAlt": "Retrato do fisioterapeuta Rodrigo Tanaka"
+        },
+        {
+          "nome": "Dra. Camila Berenguer",
+          "cargo": "Fisioterapeuta · CREFITO-3 000000-F",
+          "formacao": "Especialista em Fisioterapia Neurofuncional",
+          "bio": "Trabalha com reabilitação neurológica em adultos, incluindo pós-AVC e doenças neurodegenerativas, com ênfase em independência funcional.",
+          "imageAlt": "Retrato da fisioterapeuta Camila Berenguer"
+        }
+      ]
+    },
+    "estrutura": {
+      "badge": "A estrutura",
+      "h2": "O espaço",
+      "texto": "Cento e vinte metros quadrados em Pinheiros, divididos em três salas de atendimento individual, um espaço de cinesioterapia e a recepção.",
+      "itens": [
+        {
+          "titulo": "Salas individuais",
+          "texto": "Três salas fechadas, com privacidade real para avaliação e atendimento."
+        },
+        {
+          "titulo": "Espaço de cinesioterapia",
+          "texto": "Área livre com solo, espaldar, bola suíça e equipamentos de carga para exercício terapêutico."
+        },
+        {
+          "titulo": "Acessibilidade",
+          "texto": "Acesso sem degraus da calçada à sala, elevador com cabine ampla e banheiro adaptado."
+        },
+        {
+          "titulo": "Equipamentos",
+          "texto": "Recursos de eletrotermofototerapia para os casos em que há indicação, sempre como complemento ao exercício."
+        }
+      ]
+    },
+    "valores": {
+      "badge": "O que não negociamos",
+      "h2": "Três coisas que não mudam",
+      "itens": [
+        {
+          "titulo": "Não prometemos cura",
+          "texto": "Fisioterapia trabalha com função, dor e qualidade de movimento. Quando o caso não tem indicação fisioterapêutica, dizemos isso na avaliação e encaminhamos."
+        },
+        {
+          "titulo": "Não vendemos pacote fechado",
+          "texto": "O número de sessões é estimado na avaliação e revisado conforme a evolução. Você não paga por sessões que deixaram de ser necessárias."
+        },
+        {
+          "titulo": "Não atendemos em série",
+          "texto": "Um paciente por fisioterapeuta, por sessão. É o que torna possível ajustar a conduta no momento em que ela precisa ser ajustada."
+        }
+      ]
+    }
+  },
+  "servicos": {
+    "hero": {
+      "badge": "Especialidades",
+      "h1": "Serviços",
+      "sub": "Seis áreas de atuação. Em todas elas o percurso é o mesmo: avaliação individual, plano por escrito, sessões de 50 minutos e reavaliação periódica."
+    },
+    "lista": [
+      {
+        "icon": "bone",
+        "titulo": "Fisioterapia ortopédica",
+        "resumo": "Tratamento de lesões e disfunções de músculos, ossos e articulações.",
+        "texto": "Indicada para tendinopatias, lesões ligamentares, dores articulares e quadros de coluna. O tratamento combina terapia manual e exercício terapêutico progressivo, com recursos eletrotermofototerapêuticos quando há indicação clínica.",
+        "indicacoes": [
+          "Dor lombar e cervical persistente",
+          "Tendinopatias de ombro, cotovelo e joelho",
+          "Entorses e lesões ligamentares",
+          "Disfunções da articulação temporomandibular"
+        ]
+      },
+      {
+        "icon": "activity",
+        "titulo": "Fisioterapia esportiva",
+        "resumo": "Reabilitação e prevenção para quem pratica atividade física com regularidade.",
+        "texto": "Voltada a atletas amadores, corredores e praticantes de musculação. Trabalha o retorno gradual ao esporte depois de uma lesão e a identificação dos fatores que levaram a ela, para reduzir a chance de recidiva.",
+        "indicacoes": [
+          "Retorno ao esporte após lesão ou cirurgia",
+          "Dores recorrentes ligadas à corrida",
+          "Avaliação funcional pré-temporada",
+          "Correção de padrão de movimento"
+        ]
+      },
+      {
+        "icon": "spine",
+        "titulo": "RPG — Reeducação Postural Global",
+        "resumo": "Abordagem global das cadeias musculares, com foco em postura e dor crônica.",
+        "texto": "Método que trata o corpo como um conjunto de cadeias musculares interligadas, em vez de tratar o ponto onde dói. As sessões usam posturas de alongamento ativo sustentado, conduzidas individualmente.",
+        "indicacoes": [
+          "Dor crônica de coluna sem causa estrutural definida",
+          "Desvios posturais",
+          "Encurtamentos musculares importantes",
+          "Desconforto associado a longas horas sentado"
+        ]
+      },
+      {
+        "icon": "heart",
+        "titulo": "Pilates clínico",
+        "resumo": "Exercício terapêutico em aparelhos, prescrito e supervisionado individualmente.",
+        "texto": "Diferente do Pilates de condicionamento: aqui a sequência é prescrita a partir da sua avaliação fisioterapêutica e ajustada sessão a sessão. Usado com frequência na fase de fortalecimento após a dor ceder.",
+        "indicacoes": [
+          "Fortalecimento após quadro de dor lombar",
+          "Manutenção depois da alta de outro tratamento",
+          "Condicionamento com restrição articular",
+          "Consciência corporal e controle motor"
+        ]
+      },
+      {
+        "icon": "brain",
+        "titulo": "Fisioterapia neurofuncional",
+        "resumo": "Reabilitação de adultos com comprometimento neurológico.",
+        "texto": "Atendimento voltado à independência funcional em casos de sequela neurológica. O trabalho é lento por natureza e os objetivos são definidos junto com paciente e família, em termos de atividades concretas do dia a dia.",
+        "indicacoes": [
+          "Sequela de acidente vascular cerebral",
+          "Doença de Parkinson",
+          "Esclerose múltipla",
+          "Neuropatias periféricas"
+        ]
+      },
+      {
+        "icon": "recovery",
+        "titulo": "Reabilitação pós-cirúrgica",
+        "resumo": "Acompanhamento do pós-operatório, em articulação com a equipe médica.",
+        "texto": "Conduzida segundo o protocolo do cirurgião e ajustada à sua evolução. Mantemos contato com o médico responsável ao longo do processo e emitimos relatórios de evolução para as consultas de retorno.",
+        "indicacoes": [
+          "Pós-operatório de ligamento cruzado anterior",
+          "Pós-operatório de manguito rotador",
+          "Artroplastia de joelho e de quadril",
+          "Cirurgias de coluna"
+        ]
+      }
+    ],
+    "aviso": {
+      "titulo": "Sobre indicação e resultados",
+      "texto": "A indicação de qualquer um destes serviços depende de avaliação fisioterapêutica individual. Resultados variam conforme o quadro clínico, o tempo de evolução e a adesão ao tratamento. Esta página tem caráter informativo e não substitui consulta com profissional de saúde."
+    },
+    "cta": {
+      "h2": "Não sabe qual serviço se aplica ao seu caso?",
+      "texto": "É exatamente para isso que existe a avaliação. Em uma hora conseguimos identificar o que está acontecendo e indicar o caminho — mesmo que o caminho não seja a fisioterapia.",
+      "cta": "Agendar avaliação"
+    }
+  },
+  "contato": {
+    "hero": {
+      "badge": "Contato",
+      "h1": "Agende sua avaliação",
+      "sub": "O agendamento é feito por telefone ou WhatsApp, com a recepção. Respondemos no mesmo dia útil."
+    },
+    "canais": [
+      {
+        "icon": "whatsapp",
+        "titulo": "WhatsApp",
+        "valor": "(11) 99999-9999",
+        "detalhe": "Resposta em horário comercial",
+        "tipo": "whatsapp"
+      },
+      {
+        "icon": "phone",
+        "titulo": "Telefone",
+        "valor": "(11) 3000-0000",
+        "detalhe": "Segunda a sexta, 7h às 20h",
+        "tipo": "tel"
+      },
+      {
+        "icon": "mail",
+        "titulo": "E-mail",
+        "valor": "contato@clinicamovimento.com.br",
+        "detalhe": "Para relatórios e documentos",
+        "tipo": "mail"
+      }
+    ],
+    "horarios": {
+      "badge": "Funcionamento",
+      "h2": "Horário de atendimento"
+    },
+    "endereco": {
+      "badge": "Endereço",
+      "h2": "Como chegar",
+      "transporte": [
+        {
+          "titulo": "Metrô e trem",
+          "texto": "Estação Faria Lima (linha 4-Amarela), a dois quarteirões. Saída pela Rua dos Pinheiros."
+        },
+        {
+          "titulo": "Ônibus",
+          "texto": "Linhas que servem a Avenida Rebouças e a Rua dos Pinheiros param a menos de 300 metros."
+        },
+        {
+          "titulo": "Carro",
+          "texto": "Estacionamento conveniado no mesmo quarteirão, com desconto para pacientes. Peça o selo na recepção."
+        },
+        {
+          "titulo": "Acessibilidade",
+          "texto": "Acesso sem degraus da calçada ao elevador, e do elevador à sala. Banheiro adaptado no andar."
+        }
+      ]
+    },
+    "primeiraVisita": {
+      "badge": "Primeira consulta",
+      "h2": "O que levar na avaliação",
+      "itens": [
+        "Documento com foto",
+        "Exames de imagem recentes, se houver — radiografia, ressonância, ultrassom",
+        "Relatório ou pedido médico, quando existir",
+        "Lista dos medicamentos em uso",
+        "Roupa confortável, que permita movimento"
+      ],
+      "nota": "Nada disso é obrigatório para ser atendido. Se você não tem exames ou encaminhamento, a avaliação acontece do mesmo jeito."
+    }
+  },
+  "footer": {
+    "sobre": "Clínica de fisioterapia e reabilitação em Pinheiros, São Paulo. Avaliação individual, sessões de 50 minutos e plano terapêutico por escrito.",
+    "colunas": {
+      "navegacao": "Navegação",
+      "servicos": "Serviços",
+      "contato": "Contato"
+    },
+    "demoNotice": "Este é um site de demonstração criado para portfólio. A Clínica Movimento é fictícia, os profissionais são personagens e o endereço não existe. Nenhum agendamento é processado aqui.",
+    "credito": "Desenvolvido por Bruno Bigelli · WordPress e Elementor",
+    "legal": "As informações desta página têm caráter informativo e não substituem consulta, diagnóstico ou tratamento de profissional de saúde habilitado. A indicação de qualquer procedimento depende de avaliação individual."
+  }
+}

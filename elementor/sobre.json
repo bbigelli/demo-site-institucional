@@ -1,0 +1,799 @@
+{
+  "content": [
+    {
+      "id": "0ca1dad",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--pagehero"
+      },
+      "elements": [
+        {
+          "id": "292a3f2",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "7ec36c1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Sobre a clínica",
+                "header_size": "span",
+                "_css_classes": "fm-badge"
+              }
+            },
+            {
+              "id": "623b07c",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Uma clínica construída em torno do tempo de atendimento",
+                "header_size": "h1",
+                "_css_classes": "fm-h1"
+              }
+            },
+            {
+              "id": "45b2a37",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A Movimento nasceu em 2017 de uma inconformidade simples: fisioterapia feita com pressa não funciona, e quase toda a estrutura do setor empurra o profissional para a pressa.</p>",
+                "_css_classes": "fm-lead"
+              }
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a0dc808",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--historia"
+      },
+      "elements": [
+        {
+          "id": "bd64e4d",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "d9ed492",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-split"
+              },
+              "elements": [
+                {
+                  "id": "2f86762",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-split__copy"
+                  },
+                  "elements": [
+                    {
+                      "id": "68973ec",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Por que existimos",
+                        "header_size": "h2",
+                        "_css_classes": "fm-h2"
+                      }
+                    },
+                    {
+                      "id": "4c0eda7",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Helena Vasconcelos passou nove anos atendendo em clínicas que trabalhavam com três pacientes simultâneos por fisioterapeuta. O modelo é economicamente eficiente e clinicamente pobre: o profissional circula entre macas, a conduta vira protocolo e o paciente percebe que poderia estar em qualquer lugar.</p><p>Em 2017 ela abriu a Movimento com uma regra que nunca foi flexibilizada: um paciente por fisioterapeuta, por sessão. Isso define o tamanho da clínica, o preço da sessão e o tipo de caso que conseguimos acompanhar bem.</p><p>Hoje somos três fisioterapeutas e uma recepção. Não pretendemos crescer muito além disso, porque a escala que funcionaria financeiramente é exatamente a que abandonamos.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "f675ad7",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-split__art"
+                  },
+                  "elements": [
+                    {
+                      "id": "12fe11d",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+                          "id": "",
+                          "alt": "Recepção da Clínica Movimento",
+                          "source": "library"
+                        },
+                        "image_size": "full",
+                        "lazy_load": "yes",
+                        "_css_classes": "fm-rounded"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "f41318d",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--equipe"
+      },
+      "elements": [
+        {
+          "id": "109b7d3",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "84541c3",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Quem atende",
+                "header_size": "span",
+                "_css_classes": "fm-badge"
+              }
+            },
+            {
+              "id": "67cbb7e",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A equipe",
+                "header_size": "h2",
+                "_css_classes": "fm-h2"
+              }
+            },
+            {
+              "id": "4b43539",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Três fisioterapeutas, cada uma com área de concentração definida. Você é encaminhado para quem tem formação no seu tipo de caso.</p>",
+                "_css_classes": "fm-lead"
+              }
+            },
+            {
+              "id": "2d23e18",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-grid fm-grid--3"
+              },
+              "elements": [
+                {
+                  "id": "a010f9a",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-person"
+                  },
+                  "elements": [
+                    {
+                      "id": "2ebaef4",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+                          "id": "",
+                          "alt": "Retrato da fisioterapeuta Helena Vasconcelos",
+                          "source": "library"
+                        },
+                        "image_size": "full",
+                        "lazy_load": "yes",
+                        "_css_classes": "fm-person__img"
+                      }
+                    },
+                    {
+                      "id": "12328af",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Dra. Helena Vasconcelos",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "f5aa269",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-person__role\">Fisioterapeuta · CREFITO-3 000000-F</p>",
+                        "_css_classes": "fm-person__role-wrap"
+                      }
+                    },
+                    {
+                      "id": "d921c24",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-person__formation\">Especialista em Fisioterapia Ortopédica e Traumatológica</p>",
+                        "_css_classes": "fm-person__formation-wrap"
+                      }
+                    },
+                    {
+                      "id": "bc995df",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Fundadora da clínica e responsável técnica. Atua com reabilitação pós-cirúrgica de joelho e ombro, e com casos de dor crônica em coluna.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "f4de9fb",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-person"
+                  },
+                  "elements": [
+                    {
+                      "id": "8388955",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+                          "id": "",
+                          "alt": "Retrato do fisioterapeuta Rodrigo Tanaka",
+                          "source": "library"
+                        },
+                        "image_size": "full",
+                        "lazy_load": "yes",
+                        "_css_classes": "fm-person__img"
+                      }
+                    },
+                    {
+                      "id": "6700310",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Dr. Rodrigo Tanaka",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "4a77ccb",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-person__role\">Fisioterapeuta · CREFITO-3 000000-F</p>",
+                        "_css_classes": "fm-person__role-wrap"
+                      }
+                    },
+                    {
+                      "id": "2def686",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-person__formation\">Especialista em Fisioterapia Esportiva</p>",
+                        "_css_classes": "fm-person__formation-wrap"
+                      }
+                    },
+                    {
+                      "id": "1167041",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Acompanha atletas amadores e corredores, com foco em prevenção de lesão e retorno seguro à prática após afastamento.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "49ac45d",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-person"
+                  },
+                  "elements": [
+                    {
+                      "id": "d8563b6",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "/wp-content/plugins/elementor/assets/images/placeholder.png",
+                          "id": "",
+                          "alt": "Retrato da fisioterapeuta Camila Berenguer",
+                          "source": "library"
+                        },
+                        "image_size": "full",
+                        "lazy_load": "yes",
+                        "_css_classes": "fm-person__img"
+                      }
+                    },
+                    {
+                      "id": "bbcdd71",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Dra. Camila Berenguer",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "9f4572c",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-person__role\">Fisioterapeuta · CREFITO-3 000000-F</p>",
+                        "_css_classes": "fm-person__role-wrap"
+                      }
+                    },
+                    {
+                      "id": "82bd0e7",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p class=\"fm-person__formation\">Especialista em Fisioterapia Neurofuncional</p>",
+                        "_css_classes": "fm-person__formation-wrap"
+                      }
+                    },
+                    {
+                      "id": "6634aa2",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Trabalha com reabilitação neurológica em adultos, incluindo pós-AVC e doenças neurodegenerativas, com ênfase em independência funcional.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "f27c0b1",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--estrutura"
+      },
+      "elements": [
+        {
+          "id": "0f046f7",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "d78ab48",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A estrutura",
+                "header_size": "span",
+                "_css_classes": "fm-badge"
+              }
+            },
+            {
+              "id": "bb02503",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "O espaço",
+                "header_size": "h2",
+                "_css_classes": "fm-h2"
+              }
+            },
+            {
+              "id": "9e79ebe",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Cento e vinte metros quadrados em Pinheiros, divididos em três salas de atendimento individual, um espaço de cinesioterapia e a recepção.</p>",
+                "_css_classes": "fm-lead"
+              }
+            },
+            {
+              "id": "2b8cd3c",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-grid fm-grid--2"
+              },
+              "elements": [
+                {
+                  "id": "48e0bef",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "81f1879",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Salas individuais",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "6569234",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Três salas fechadas, com privacidade real para avaliação e atendimento.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "f34791f",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "2c585aa",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Espaço de cinesioterapia",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "0fcff65",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Área livre com solo, espaldar, bola suíça e equipamentos de carga para exercício terapêutico.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "9dae650",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "d6bf2da",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Acessibilidade",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "ba36c95",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Acesso sem degraus da calçada à sala, elevador com cabine ampla e banheiro adaptado.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "4815381",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-card"
+                  },
+                  "elements": [
+                    {
+                      "id": "812600b",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Equipamentos",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "649d9c6",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Recursos de eletrotermofototerapia para os casos em que há indicação, sempre como complemento ao exercício.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "63068ea",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--valores"
+      },
+      "elements": [
+        {
+          "id": "7f8ef2f",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "d5f3a6c",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "O que não negociamos",
+                "header_size": "span",
+                "_css_classes": "fm-badge"
+              }
+            },
+            {
+              "id": "b96b427",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Três coisas que não mudam",
+                "header_size": "h2",
+                "_css_classes": "fm-h2"
+              }
+            },
+            {
+              "id": "9c17574",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-grid fm-grid--3"
+              },
+              "elements": [
+                {
+                  "id": "63d2158",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-value"
+                  },
+                  "elements": [
+                    {
+                      "id": "9ce2de2",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Não prometemos cura",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "805a79d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Fisioterapia trabalha com função, dor e qualidade de movimento. Quando o caso não tem indicação fisioterapêutica, dizemos isso na avaliação e encaminhamos.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "0e38e89",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-value"
+                  },
+                  "elements": [
+                    {
+                      "id": "4749b13",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Não vendemos pacote fechado",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "2ac14ce",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>O número de sessões é estimado na avaliação e revisado conforme a evolução. Você não paga por sessões que deixaram de ser necessárias.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "b89fbb9",
+                  "elType": "container",
+                  "settings": {
+                    "content_width": "full",
+                    "css_classes": "fm-value"
+                  },
+                  "elements": [
+                    {
+                      "id": "f1b0843",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Não atendemos em série",
+                        "header_size": "h3",
+                        "_css_classes": "fm-h3"
+                      }
+                    },
+                    {
+                      "id": "d5281fe",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Um paciente por fisioterapeuta, por sessão. É o que torna possível ajustar a conduta no momento em que ela precisa ser ajustada.</p>"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "9b4bd06",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "css_classes": "fm-section fm-section--cta"
+      },
+      "elements": [
+        {
+          "id": "b7d434b",
+          "elType": "container",
+          "settings": {
+            "content_width": "full",
+            "css_classes": "fm-wrap"
+          },
+          "elements": [
+            {
+              "id": "467e2a5",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A avaliação é o primeiro passo",
+                "header_size": "h2",
+                "_css_classes": "fm-h2"
+              }
+            },
+            {
+              "id": "29f5c60",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Em uma hora conseguimos entender a sua queixa e dizer, com honestidade, se a fisioterapia é o caminho e quanto tempo ela tende a levar.</p>",
+                "_css_classes": "fm-lead"
+              }
+            },
+            {
+              "id": "d45c990",
+              "elType": "container",
+              "settings": {
+                "content_width": "full",
+                "css_classes": "fm-actions"
+              },
+              "elements": [
+                {
+                  "id": "0d6d61b",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Agendar avaliação",
+                    "link": {
+                      "url": "/contato/",
+                      "is_external": "",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_css_classes": "fm-btn fm-btn--primary"
+                  }
+                },
+                {
+                  "id": "f0e4fd5",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Falar no WhatsApp",
+                    "link": {
+                      "url": "https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20consultas%20na%20Cl%C3%ADnica%20Movimento.",
+                      "is_external": "on",
+                      "nofollow": "",
+                      "custom_attributes": ""
+                    },
+                    "_css_classes": "fm-btn fm-btn--ghost"
+                  }
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "Clinica Movimento - Sobre",
+  "type": "page"
+}

@@ -43,7 +43,7 @@ Nenhum widget Pro. Por isso o cabeçalho e o rodapé são montados em
 nenhum widget carrega settings de tipografia ou cor. Texto no JSON, visual
 no CSS, estrutura no gerador.
 
-### As seis armadilhas do Elementor
+### As sete armadilhas do Elementor
 
 O validador do gerador reprova o build se alguma voltar. Não contorne o
 validador; corrija a causa.
@@ -54,6 +54,8 @@ validador; corrija a causa.
 4. Cores com prefixo `.elementor`, sempre declaradas e nunca herdadas
 5. O override de cor precisa cobrir `.elementor-widget-text-editor`
 6. `display` e `gap` de container também precisam do prefixo `.elementor`
+7. `.e-con` declara `flex-direction: column`; layout horizontal precisa
+   declarar `row`, e os widgets dentro dele precisam de `width: auto`
 
 ### Contraste: medir a paleta e auditar o render
 

@@ -5,7 +5,7 @@ Description:  Child theme de Hello Elementor para o site de demonstração "Clí
 Author:       Bruno Bigelli
 Author URI:   https://github.com/bbigelli
 Template:     hello-elementor
-Version:      1.0.0
+Version:      1.1.0
 Text Domain:  clinica-movimento
 License:      GPL-2.0-or-later
 */
@@ -161,6 +161,16 @@ body {
   color: #ffffff;
 }
 
+/* Elementos que sao <p> dentro de um text-editor mas tem fundo proprio.
+   O override de texto acima os alcanca e apagaria a cor correta -- o
+   numero da etapa ficaria em #475569 sobre o teal, 1,38:1. Precisam de
+   especificidade maior que o proprio override.
+   Mesmo defeito que o selo de garantia da demo 1: ao criar um elemento
+   de texto com fundo colorido, ele precisa entrar aqui. */
+.elementor .fm-step__num-wrap .fm-step__num {
+  color: #ffffff;
+}
+
 /* Secao escura de chamada final. */
 .elementor .fm-section--cta .elementor-heading-title {
   color: #ffffff;
@@ -229,10 +239,22 @@ body {
   align-content: start;
 }
 
+/* flex-direction tambem precisa ser declarada.
+   O Elementor define .e-con { flex-direction: var(--flex-direction) } com
+   column por padrao. Sobrescrever so display e gap nao basta: os botoes
+   ficam empilhados em vez de lado a lado. */
 .elementor .fm-actions {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   gap: 12px;
+}
+
+/* O Elementor da width 100% aos widgets dentro de container flex, o que
+   faz cada botao ocupar a linha inteira. */
+.elementor .fm-actions > .elementor-widget {
+  width: auto;
 }
 
 @media (min-width: 768px) {

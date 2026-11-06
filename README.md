@@ -86,10 +86,11 @@ um site que funciona.
 
 ---
 
-## As seis armadilhas do Elementor, já resolvidas
+## As sete armadilhas do Elementor
 
-Este projeto nasce com as correções que a demo 1 só descobriu depois de
-publicada. O validador do gerador **reprova o build** se alguma voltar:
+Seis delas este projeto já herdou resolvidas da demo 1, e o validador do
+gerador **reprova o build** se voltarem. A sétima apareceu aqui, na
+montagem:
 
 | Armadilha | Correção |
 |---|---|
@@ -99,6 +100,7 @@ publicada. O validador do gerador **reprova o build** se alguma voltar:
 | O kit global pinta títulos e botões com as cores dele | Cores declaradas com prefixo `.elementor` |
 | O kit global também pinta **todo o texto** com `#7A7A7A` (4,29:1) | `.elementor-widget-text-editor` no override |
 | `display` e `gap` de container empatam em especificidade com `.e-con` | Layout também com prefixo `.elementor` |
+| `.e-con` também declara `flex-direction: column` | Declarar `row` onde o layout for horizontal |
 
 A última é a mais traiçoeira: sem o prefixo, o layout funciona ou não
 conforme a ordem de carregamento dos arquivos CSS — que muda entre o

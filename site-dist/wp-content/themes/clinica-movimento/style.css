@@ -1,0 +1,1049 @@
+/*
+Theme Name:   Clinica Movimento
+Theme URI:    https://github.com/bbigelli/demo-site-institucional
+Description:  Child theme de Hello Elementor para o site de demonstração "Clínica Movimento", fisioterapia e reabilitação. Visual, cabeçalho, rodapé e WhatsApp vivem aqui; os templates do Elementor carregam estrutura e texto.
+Author:       Bruno Bigelli
+Author URI:   https://github.com/bbigelli
+Template:     hello-elementor
+Version:      1.1.0
+Text Domain:  clinica-movimento
+License:      GPL-2.0-or-later
+*/
+
+/* ==========================================================================
+   Fonte
+   Inter local, dois pesos. Ver docs/checklist-publicacao.md.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/wp-content/themes/clinica-movimento/fonts/inter-400.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/wp-content/themes/clinica-movimento/fonts/inter-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ==========================================================================
+   Tokens
+   Teal frio, deliberadamente oposto ao laranja da demo 1.
+   Contraste medido com build/check-contrast.mjs -- nao alterar sem remedir,
+   e remedir tambem no navegador, nao so na paleta.
+   ========================================================================== */
+
+:root {
+  --fm-ink: #0f172a;
+  --fm-ink-soft: #475569;
+  --fm-surface: #ffffff;
+  --fm-surface-alt: #f8fafc;
+  --fm-surface-deep: #134e4a;
+  --fm-primary: #0f766e;
+  --fm-primary-hover: #115e59;
+  --fm-primary-tint: #f0fdfa;
+  --fm-accent: #0e7490;
+  --fm-success: #15803d;
+  --fm-whatsapp: #075e54;
+  --fm-border: #e2e8f0;
+  --fm-border-deep: #2a6a64;
+
+  --fm-radius: 10px;
+  --fm-radius-lg: 18px;
+  --fm-wrap: 1160px;
+  --fm-measure: 680px;
+
+  --fm-pad-x: 20px;
+  --fm-section-y: 56px;
+  --fm-header-h: 72px;
+
+  --fm-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --fm-pad-x: 24px;
+    --fm-section-y: 96px;
+    --fm-header-h: 80px;
+  }
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+  font-family: var(--fm-font);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+  line-height: 1.65;
+  color: var(--fm-ink);
+  background: var(--fm-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+.fm-section {
+  padding: var(--fm-section-y) var(--fm-pad-x);
+}
+
+.fm-lead p,
+.fm-note p,
+.fm-legal p {
+  max-width: var(--fm-measure);
+}
+
+/* ==========================================================================
+   Overrides do Elementor -- cor
+
+   O kit global do Elementor declara as cores dele nos widgets com a mesma
+   especificidade que a nossa, e o CSS por pagina dele carrega depois do
+   tema. Empate resolvido por ordem de carregamento e a ordem muda entre o
+   WordPress e o export estatico.
+
+   Na demo 1 isso custou 74 elementos reprovados em contraste. Aqui ja
+   nasce com o prefixo .elementor, que decide por especificidade.
+
+   Lembrar: declarar a cor, nao herdar. O Elementor declara a dele, e
+   declaracao vence heranca.
+   ========================================================================== */
+
+.elementor .fm-h1 .elementor-heading-title,
+.elementor .fm-h2 .elementor-heading-title,
+.elementor .fm-h3 .elementor-heading-title {
+  color: var(--fm-ink);
+}
+
+.elementor .fm-badge .elementor-heading-title {
+  color: var(--fm-primary);
+  background: var(--fm-primary-tint);
+}
+
+.elementor .elementor-widget-text-editor,
+.elementor .elementor-widget-text-editor p,
+.elementor .elementor-widget-text-editor li,
+.elementor .elementor-widget-text-editor blockquote {
+  color: var(--fm-ink-soft);
+}
+
+.elementor .fm-btn--primary .elementor-button {
+  background-color: var(--fm-primary);
+  color: #ffffff;
+}
+
+.elementor .fm-btn--primary .elementor-button:hover,
+.elementor .fm-btn--primary .elementor-button:focus {
+  background-color: var(--fm-primary-hover);
+}
+
+.elementor .fm-btn--outline .elementor-button {
+  background-color: transparent;
+  color: var(--fm-primary);
+}
+
+.elementor .fm-btn--outline .elementor-button:hover,
+.elementor .fm-btn--outline .elementor-button:focus {
+  background-color: var(--fm-primary-tint);
+  color: var(--fm-primary-hover);
+}
+
+.elementor .fm-btn--ghost .elementor-button {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* Elementos que sao <p> dentro de um text-editor mas tem fundo proprio.
+   O override de texto acima os alcanca e apagaria a cor correta -- o
+   numero da etapa ficaria em #475569 sobre o teal, 1,38:1. Precisam de
+   especificidade maior que o proprio override.
+   Mesmo defeito que o selo de garantia da demo 1: ao criar um elemento
+   de texto com fundo colorido, ele precisa entrar aqui. */
+.elementor .fm-step__num-wrap .fm-step__num {
+  color: #ffffff;
+}
+
+/* Secao escura de chamada final. */
+.elementor .fm-section--cta .elementor-heading-title {
+  color: #ffffff;
+}
+
+.elementor .fm-section--cta .elementor-widget-text-editor,
+.elementor .fm-section--cta .elementor-widget-text-editor p {
+  color: #d7ebe8;
+}
+
+/* ==========================================================================
+   Overrides do Elementor -- layout
+
+   .e-con declara display e gap com a mesma especificidade das nossas
+   regras. Sem o prefixo .elementor o layout funciona ou nao conforme a
+   ordem dos arquivos CSS, que muda entre o WordPress e o export estatico.
+   Layout novo acrescentado abaixo precisa entrar aqui tambem.
+   ========================================================================== */
+
+.elementor .fm-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: var(--fm-wrap);
+  margin-inline: auto;
+}
+
+.elementor .fm-hero,
+.elementor .fm-split {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.elementor .fm-hero__copy,
+.elementor .fm-split__copy,
+.elementor .fm-split__aside {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.elementor .fm-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.elementor .fm-steps,
+.elementor .fm-services {
+  display: grid;
+  gap: 16px;
+}
+
+.elementor .fm-card,
+.elementor .fm-service,
+.elementor .fm-value,
+.elementor .fm-person,
+.elementor .fm-channel,
+.elementor .fm-step,
+.elementor .fm-service-full,
+.elementor .fm-notice {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+/* flex-direction tambem precisa ser declarada.
+   O Elementor define .e-con { flex-direction: var(--flex-direction) } com
+   column por padrao. Sobrescrever so display e gap nao basta: os botoes
+   ficam empilhados em vez de lado a lado. */
+.elementor .fm-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+/* O Elementor da width 100% aos widgets dentro de container flex, o que
+   faz cada botao ocupar a linha inteira. */
+.elementor .fm-actions > .elementor-widget {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .elementor .fm-grid {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .elementor .fm-steps,
+  .elementor .fm-services {
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .elementor .fm-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .elementor .fm-hero,
+  .elementor .fm-split {
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  .elementor .fm-wrap {
+    gap: 24px;
+  }
+}
+
+/* ==========================================================================
+   Tipografia
+   ========================================================================== */
+
+.fm-h1 .elementor-heading-title {
+  font-size: clamp(2rem, 1.3rem + 3.2vw, 3.125rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.fm-h2 .elementor-heading-title {
+  font-size: clamp(1.625rem, 1.25rem + 1.9vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+
+.fm-h3 .elementor-heading-title {
+  font-size: clamp(1.125rem, 1.07rem + 0.3vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.fm-lead p {
+  font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem);
+  line-height: 1.6;
+}
+
+.fm-note p,
+.fm-legal p {
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+/* ==========================================================================
+   Badge
+   ========================================================================== */
+
+.fm-badge .elementor-heading-title {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Listas com check
+   SVG inline em background, nenhuma biblioteca de icones.
+   ========================================================================== */
+
+.fm-checks ul,
+ul.fm-checks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.fm-checks li {
+  position: relative;
+  padding-left: 32px;
+  line-height: 1.55;
+}
+
+.fm-checks li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--fm-primary)
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>")
+    center / 12px 12px no-repeat;
+}
+
+/* ==========================================================================
+   Botoes
+   ========================================================================== */
+
+.fm-btn .elementor-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 15px 30px;
+  border-radius: var(--fm-radius);
+  font-family: var(--fm-font);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.fm-btn--outline .elementor-button {
+  border-color: var(--fm-primary);
+}
+
+.fm-btn--ghost .elementor-button {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.fm-btn--ghost .elementor-button:hover,
+.fm-btn--ghost .elementor-button:focus {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fm-btn--sm .elementor-button {
+  min-height: 44px;
+  padding: 11px 20px;
+  font-size: 0.9375rem;
+}
+
+/* Foco visivel: o Elementor nao entrega, e sem ele a navegacao por teclado
+   fica impraticavel. */
+.fm-btn .elementor-button:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--fm-primary-hover);
+  outline-offset: 2px;
+}
+
+.fm-section--cta .fm-btn .elementor-button:focus-visible,
+.fm-header a:focus-visible,
+.fm-footer a:focus-visible {
+  outline-color: #5eead4;
+}
+
+/* ==========================================================================
+   Secoes
+   ========================================================================== */
+
+.fm-section--pilares,
+.fm-section--estrutura,
+.fm-section--horarios,
+.fm-section--servicos-destaque {
+  background: var(--fm-surface-alt);
+}
+
+.fm-section--cta {
+  background: var(--fm-surface-deep);
+}
+
+.fm-section--pagehero {
+  padding-block: calc(var(--fm-section-y) * 0.8);
+  background: var(--fm-surface-alt);
+  border-bottom: 1px solid var(--fm-border);
+}
+
+.fm-section--cta .fm-wrap {
+  text-align: center;
+  justify-items: center;
+}
+
+.fm-section--cta .fm-actions {
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.fm-hero__img img,
+.fm-rounded img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--fm-radius-lg);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 1023px) {
+  .fm-hero__img img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* ==========================================================================
+   Cards, servicos, valores
+   ========================================================================== */
+
+.fm-card,
+.fm-service,
+.fm-channel,
+.fm-person,
+.fm-service-full {
+  padding: 26px 22px;
+  background: var(--fm-surface);
+  border: 1px solid var(--fm-border);
+  border-radius: var(--fm-radius-lg);
+}
+
+.fm-section--pilares .fm-card,
+.fm-section--estrutura .fm-card,
+.fm-section--servicos-destaque .fm-service {
+  background: var(--fm-surface);
+}
+
+.fm-value {
+  padding: 24px 0 0;
+  border-top: 3px solid var(--fm-primary);
+}
+
+.fm-service-full {
+  padding: 30px 26px;
+}
+
+.fm-service__lead {
+  margin: 0;
+  font-weight: 700;
+  color: var(--fm-ink);
+}
+
+.fm-service__label {
+  margin: 14px 0 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fm-primary);
+}
+
+/* Icone do card.
+   position: static e obrigatorio: o Elementor usa o ::before dos
+   containers para o overlay de fundo, com position absolute. Sem o reset
+   o icone aparece mas nao ocupa linha no grid e fica sob o titulo. */
+.fm-card--icon::before,
+.fm-service::before,
+.fm-service-full::before,
+.fm-channel::before {
+  content: '';
+  position: static;
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 4px;
+  border-radius: var(--fm-radius);
+  background-color: var(--fm-primary-tint);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+.fm-icon-user::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/><circle cx='12' cy='7' r='4'/></svg>");
+}
+
+.fm-icon-clock::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><polyline points='12 6 12 12 16 14'/></svg>");
+}
+
+.fm-icon-clipboard::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2'/><rect x='8' y='2' width='8' height='4' rx='1'/><path d='M9 12h6M9 16h4'/></svg>");
+}
+
+.fm-icon-bone::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M7 11a3 3 0 1 1 2-5.2A3 3 0 1 1 13 7l4 4a3 3 0 1 1 2 5.2A3 3 0 1 1 15 19l-4-4'/></svg>");
+}
+
+.fm-icon-activity::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='22 12 18 12 15 21 9 3 6 12 2 12'/></svg>");
+}
+
+.fm-icon-spine::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3v18'/><path d='M8 6h8M8 10h8M8 14h8M8 18h8'/></svg>");
+}
+
+.fm-icon-heart::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z'/></svg>");
+}
+
+.fm-icon-brain::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44A2.5 2.5 0 0 1 4 17.5a2.5 2.5 0 0 1-1.1-4.74A2.5 2.5 0 0 1 3 8.5a2.5 2.5 0 0 1 2-2.45A2.5 2.5 0 0 1 9.5 2z'/><path d='M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44A2.5 2.5 0 0 0 20 17.5a2.5 2.5 0 0 0 1.1-4.74A2.5 2.5 0 0 0 21 8.5a2.5 2.5 0 0 0-2-2.45A2.5 2.5 0 0 0 14.5 2z'/></svg>");
+}
+
+.fm-icon-recovery::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 12a9 9 0 0 1 15.5-6.2'/><polyline points='21 3 21 9 15 9'/><path d='M21 12a9 9 0 0 1-15.5 6.2'/><polyline points='3 21 3 15 9 15'/></svg>");
+}
+
+.fm-icon-whatsapp::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.9-.9L3 20l1.1-4a8.4 8.4 0 0 1-1-4.1 8.4 8.4 0 0 1 8.5-8.4 8.4 8.4 0 0 1 9.4 8z'/></svg>");
+}
+
+.fm-icon-phone::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z'/></svg>");
+}
+
+.fm-icon-mail::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='4' width='20' height='16' rx='2'/><polyline points='22 7 12 13 2 7'/></svg>");
+}
+
+/* ==========================================================================
+   Etapas da jornada
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .elementor .fm-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .elementor .fm-steps {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+  }
+}
+
+.fm-step {
+  padding-top: 20px;
+  border-top: 3px solid var(--fm-border);
+}
+
+.fm-step__num {
+  margin: 0;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--fm-primary);
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Equipe
+   ========================================================================== */
+
+.fm-person__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--fm-radius);
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.fm-person__role {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--fm-primary);
+}
+
+.fm-person__formation {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--fm-ink-soft);
+}
+
+/* ==========================================================================
+   Contato
+   ========================================================================== */
+
+.fm-channel__value {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--fm-ink);
+  word-break: break-word;
+}
+
+.fm-channel__hint {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--fm-ink-soft);
+}
+
+.fm-hours {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 420px;
+}
+
+.fm-hours li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--fm-border);
+}
+
+.fm-hours li:last-child {
+  border-bottom: 0;
+}
+
+.fm-address {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.fm-map iframe,
+.fm-map .elementor-custom-embed {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: var(--fm-radius-lg);
+  filter: saturate(0.85);
+}
+
+.fm-notice {
+  padding: 24px 22px;
+  background: var(--fm-primary-tint);
+  border-left: 4px solid var(--fm-primary);
+  border-radius: var(--fm-radius);
+}
+
+/* ==========================================================================
+   Cabecalho
+   Injetado por functions.php, nao pelo Elementor: elemento de posicao fixa
+   dentro da arvore do Elementor atrapalha o editor e o calculo de altura.
+   ========================================================================== */
+
+.fm-header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--fm-border);
+}
+
+.fm-header__inner {
+  max-width: var(--fm-wrap);
+  margin-inline: auto;
+  min-height: var(--fm-header-h);
+  padding: 0 var(--fm-pad-x);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fm-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--fm-ink);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.fm-logo span {
+  color: var(--fm-primary);
+}
+
+.fm-nav {
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+
+.fm-nav a {
+  padding: 9px 14px;
+  border-radius: var(--fm-radius);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--fm-ink-soft);
+  text-decoration: none;
+}
+
+.fm-nav a:hover,
+.fm-nav a:focus {
+  color: var(--fm-primary);
+  background: var(--fm-primary-tint);
+}
+
+.fm-nav a[aria-current='page'] {
+  color: var(--fm-primary);
+}
+
+.fm-header__cta {
+  display: none;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: var(--fm-radius);
+  background: var(--fm-primary);
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fm-header__cta:hover,
+.fm-header__cta:focus {
+  background: var(--fm-primary-hover);
+  color: #ffffff;
+}
+
+@media (min-width: 900px) {
+  .fm-nav,
+  .fm-header__cta {
+    display: flex;
+  }
+  .fm-menu-toggle {
+    display: none;
+  }
+}
+
+/* Menu do celular: <details>, sem uma linha de JavaScript. O navegador ja
+   faz o acordeao, o foco e o anuncio de estado para leitor de tela. */
+.fm-menu {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .fm-menu {
+    display: none;
+  }
+}
+
+.fm-menu > summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--fm-radius);
+  border: 1px solid var(--fm-border);
+  cursor: pointer;
+  background: var(--fm-surface);
+}
+
+.fm-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.fm-menu > summary::after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f172a' stroke-width='2' stroke-linecap='round'><line x1='3' y1='6' x2='21' y2='6'/><line x1='3' y1='12' x2='21' y2='12'/><line x1='3' y1='18' x2='21' y2='18'/></svg>")
+    center / contain no-repeat;
+}
+
+.fm-menu[open] > summary::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f172a' stroke-width='2' stroke-linecap='round'><line x1='18' y1='6' x2='6' y2='18'/><line x1='6' y1='6' x2='18' y2='18'/></svg>");
+}
+
+.fm-menu__panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px var(--fm-pad-x) 18px;
+  background: var(--fm-surface);
+  border-bottom: 1px solid var(--fm-border);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  display: grid;
+  gap: 2px;
+}
+
+.fm-menu__panel a {
+  padding: 13px 12px;
+  border-radius: var(--fm-radius);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--fm-ink);
+  text-decoration: none;
+}
+
+.fm-menu__panel a[aria-current='page'] {
+  color: var(--fm-primary);
+  background: var(--fm-primary-tint);
+}
+
+.fm-menu__panel .fm-menu__cta {
+  margin-top: 8px;
+  text-align: center;
+  background: var(--fm-primary);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Rodape
+   ========================================================================== */
+
+.fm-footer {
+  background: var(--fm-surface-deep);
+  color: #d7ebe8;
+  padding: 56px var(--fm-pad-x) 28px;
+}
+
+.fm-footer__inner {
+  max-width: var(--fm-wrap);
+  margin-inline: auto;
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .fm-footer__inner {
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 40px;
+  }
+}
+
+.fm-footer h2 {
+  margin: 0 0 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #99f6e4;
+}
+
+.fm-footer__brand {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.fm-footer p {
+  margin: 0 0 8px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.fm-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 9px;
+}
+
+.fm-footer a {
+  color: #d7ebe8;
+  font-size: 0.9375rem;
+  text-decoration: none;
+}
+
+.fm-footer a:hover,
+.fm-footer a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.fm-footer__bottom {
+  max-width: var(--fm-wrap);
+  margin: 36px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--fm-border-deep);
+  display: grid;
+  gap: 14px;
+}
+
+.fm-footer__demo {
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.07);
+  border-left: 3px solid #5eead4;
+  border-radius: var(--fm-radius);
+  font-size: 0.875rem;
+}
+
+.fm-footer__legal,
+.fm-footer__credit {
+  font-size: 0.8125rem;
+  color: #bcdedb;
+}
+
+/* ==========================================================================
+   WhatsApp flutuante
+   ========================================================================== */
+
+.fm-wa {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 950;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--fm-whatsapp);
+  color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.fm-wa:hover,
+.fm-wa:focus {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.fm-wa:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.fm-wa__icon {
+  width: 23px;
+  height: 23px;
+  flex: 0 0 23px;
+}
+
+@media (max-width: 767px) {
+  .fm-wa {
+    padding: 0;
+    width: 54px;
+    justify-content: center;
+  }
+  .fm-wa__label {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Acessibilidade
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.fm-skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.fm-skip:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 1000;
+  padding: 12px 18px;
+  background: var(--fm-surface-deep);
+  color: #ffffff;
+  border-radius: var(--fm-radius);
+}

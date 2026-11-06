@@ -29,10 +29,17 @@ function toSitePath(ref, fromDir) {
   let r = ref.trim().replace(/^['"]|['"]$/g, '');
   if (!r || r.startsWith('data:') || r.startsWith('#') || r.startsWith('mailto:')) return null;
   if (/^[a-z]+:\/\//i.test(r) || r.startsWith('//')) return null; // externo
+  if (r.startsWith('tel:')) return null;
   r = r.split('#')[0].split('?')[0];
   if (!r) return null;
-  const abs = r.startsWith('/') ? r.slice(1) : posix.normalize(posix.join(fromDir, r));
-  return abs.startsWith('..') ? null : abs;
+  let abs = r.startsWith('/') ? r.slice(1) : posix.normalize(posix.join(fromDir, r));
+  if (abs.startsWith('..')) return null;
+  // Link de pagina vem como /sobre/ e o arquivo e sobre/index.html. Sem
+  // resolver isso, as paginas internas entram no relatorio como
+  // referencia ausente -- e, pior, nao seriam copiadas se nao fossem
+  // tambem ponto de partida.
+  if (abs === '' || abs.endsWith('/')) abs = posix.join(abs, 'index.html');
+  return abs;
 }
 
 const usados = new Set();

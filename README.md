@@ -8,7 +8,8 @@ de saúde, construído em WordPress com Elementor.
 > visível no rodapé de todas as páginas. Demonstração técnica, não material
 > de divulgação.
 
-**Demonstração ao vivo:** a publicar
+**Demonstração ao vivo:** https://demo-site-institucional-site-dist.vercel.app/
+**PageSpeed no celular:** desempenho 100 · acessibilidade 100
 **Repositório da demo 1:** [demo-landing-infoproduto](https://github.com/bbigelli/demo-landing-infoproduto)
 
 ---

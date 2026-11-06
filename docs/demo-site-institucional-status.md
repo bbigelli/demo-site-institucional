@@ -1,6 +1,6 @@
 # Status: demo-site-institucional
 
-## Fase atual: Montado, exportado e no GitHub — aguardando conexão com a Vercel
+## Fase atual: Concluído — demo no ar, case no portfólio, PageSpeed 100/100
 ## Último agente: Claude principal (sessão de 2026-11-06)
 ## Branch: main
 
@@ -188,3 +188,54 @@ referencia `/sobre/` e o arquivo e `sobre/index.html`.
 1. **Dev:** conectar o repositorio na Vercel
 2. **Assistente:** medir o PageSpeed das 4 páginas e acrescentar o case ao
    portfólio
+
+---
+
+## Encerramento — 2026-11-06
+
+**Projeto 2 concluído.** O dev decidiu encerrar o conjunto aqui: os
+projetos 3 (antes e depois) e 4 (automação n8n) não serão feitos.
+
+### No ar
+
+| | |
+|---|---|
+| Demo | https://demo-site-institucional-site-dist.vercel.app/ |
+| Código | https://github.com/bbigelli/demo-site-institucional |
+| Case no portfólio | brunobigelliportifolio.vercel.app, commit `0fa94c1` |
+
+### PageSpeed Insights, celular
+
+| Categoria | Nota |
+|---|---|
+| Desempenho | **100** |
+| Acessibilidade | **100** |
+| Práticas recomendadas | 96 |
+| SEO | 50 |
+
+A acessibilidade 100 superou a demo 1, que ficou em 97. A diferença foi
+ter auditado o contraste na página renderizada desde o início, em vez de
+confiar só na paleta.
+
+**O SEO 50 é intencional:** a única reprovação é o `noindex`, que é o
+correto para demo com clínica fictícia.
+
+### Percalço no deploy
+
+O primeiro build foi interrompido por queda de conexão. O projeto ficou
+criado no dashboard da Vercel sem nenhum deploy publicado, e por isso a
+URL não existia. A integração com o GitHub tinha sobrevivido, então um
+push bastou para disparar o build.
+
+Aproveitado para corrigir o `trailingSlash`, que estava `false` e fazia
+cada link interno responder 308: o WordPress monta a navegação com barra
+final, então o valor correto é `true`.
+
+### O que ficou pendente, por decisão do dev
+
+- Imagens seguem placeholder do Elementor
+- Fontes Inter ausentes: o site usa a fonte do sistema
+- A instalação local em `demo-clinica-movimento` do LocalWP continua de pé
+  e pode ser reaberta a qualquer momento
+
+Nada disso impede a demo de cumprir o papel de exemplo.
